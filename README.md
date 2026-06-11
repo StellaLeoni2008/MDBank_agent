@@ -225,9 +225,7 @@ http://localhost:9090
 ---
 
 ## 🧠 Conceitos praticados
-
 Durante o desenvolvimento deste projeto, foram praticados conceitos avançados de arquitetura para agentes de IA, incluindo:
-
 - Sistemas multiagente
 - Roteamento de intenções
 - Comunicação entre agentes
@@ -235,7 +233,6 @@ Durante o desenvolvimento deste projeto, foram praticados conceitos avançados d
 - Backend for Agents
 - Separação entre agentes e regras de negócio
 - Catálogo de agentes e ferramentas
-- APIs HTTP com FastAPI
 - Comunicação distribuída com JSON-RPC
 - Serviços MCP com FastMCP
 - Interfaces interativas com React e Streamlit
