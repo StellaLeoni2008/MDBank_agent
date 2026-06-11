@@ -147,7 +147,7 @@ Essa camada é responsável por:
 ### Chat com abertura de conta
 
 <p align="center">
-<img width="900" alt="Abertura de conta MDBank" src="https://github.com/user-attachments/assets/9ff7eba6-71a7-4fbd-bb28-f88a059fa3ae" />
+<img width="500" alt="Abertura de conta MDBank" src="https://github.com/user-attachments/assets/9ff7eba6-71a7-4fbd-bb28-f88a059fa3ae" />
 </p>
 
 
@@ -156,7 +156,7 @@ Essa camada é responsável por:
 ### Consulta e exibição de cartão de crédito
 
 <p align="center">
-<img width="900" alt="Cartão de crédito MDBank" src="Cartão MDBank" src="https://github.com/user-attachments/assets/ee06b663-ee38-47cd-a035-dc0fdab09699" />
+<img width="500" alt="Cartão de crédito MDBank" src="https://github.com/user-attachments/assets/ee06b663-ee38-47cd-a035-dc0fdab09699" />
 </p>
 
 ---
@@ -164,13 +164,12 @@ Essa camada é responsável por:
 ### Histórico de respostas e estado compartilhado
 
 <p align="center">
-<img width="900" alt="Histórico MDBank" src="https://github.com/user-attachments/assets/9ddfd458-88dd-4ae5-a328-e40b3ccf0d46" />
+<img width="500" alt="Histórico MDBank" src="https://github.com/user-attachments/assets/9ddfd458-88dd-4ae5-a328-e40b3ccf0d46" />
 </p>
 
 ---
 
 ## 📂 Estrutura do projeto
-
 ```text
 MDBank_agent/
 ├── MDBank/
@@ -199,7 +198,6 @@ MDBank_agent/
 ---
 
 ## ▶️ Como executar o projeto
-
 ### 1. Clone este repositório
 
 ```bash
