@@ -6,7 +6,7 @@
 
 ## 💻 Tecnologias utilizadas no projeto
 
-<img loading="lazy" src="https://img.shields.io/badge/Python-darkblue"/>      <img loading="lazy" src="https://img.shields.io/badge/FastAPI-purple"/>      <img loading="lazy" src="https://img.shields.io/badge/FastMCP-pink"/>      <img loading="lazy" src="https://img.shields.io/badge/React-darkgreen"/>      <img loading="lazy" src="https://img.shields.io/badge/Streamlit-red"/>      <img loading="lazy" src="https://img.shields.io/badge/Docker_Compose-blue"/>      <img loading="lazy" src="https://img.shields.io/badge/JavaScript-yellow"/>      <img loading="lazy" src="https://img.shields.io/badge/JSON--RPC-grey"/>      <img loading="lazy" src="https://img.shields.io/badge/A2A-green"/>     
+<img loading="lazy" src="https://img.shields.io/badge/Python-darkblue"/>      <img loading="lazy" src="https://img.shields.io/badge/FastAPI-purple"/>      <img loading="lazy" src="https://img.shields.io/badge/FastMCP-pink"/>      <img loading="lazy" src="https://img.shields.io/badge/React-darkgreen"/>      <img loading="lazy" src="https://img.shields.io/badge/Streamlit-red"/>      <img loading="lazy" src="https://img.shields.io/badge/Docker_Compose-blue"/>      <img loading="lazy" src="https://img.shields.io/badge/JavaScript-yellow"/>     <img loading="lazy" src="https://img.shields.io/badge/A2A-green"/>     
 
 ---
 
