@@ -246,8 +246,8 @@ Durante o desenvolvimento deste projeto, foram praticados conceitos avançados d
 ---
 
 <br>
-## 👩🏻‍💻 Autora
 
+## 👩🏻‍💻 Autora
 | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/237313711?v=4" width=115><br><sub>Stella Leoni</sub>](https://github.com/StellaLeoni2008) |
 | :---: |
 
