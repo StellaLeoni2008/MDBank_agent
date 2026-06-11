@@ -40,9 +40,8 @@ Os principais objetivos foram:
 A arquitetura do MDBank AI é composta por diferentes camadas responsáveis por comunicação, roteamento, regras de negócio e execução dos agentes.
 
 <p align="center">
-<img width="900" alt="Arquitetura MDBank AI" src="(https://img.shields.io/badge/AG--UI-ora[AgentMDBank.drawio.pdf])" />
-<img loading="lazy" src="https://img.shields.io/badge/AG--UI-ora[AgentMDBank.drawio.pdf](https://github.com/user-attachments/files/28840943/AgentMDBank.drawio.pdf)
-nge"/>
+<img width="500" height="700" alt="Arquitetura_AgentMDBank pdf" src="https://github.com/user-attachments/assets/7a7d34ab-11f3-438d-b2f9-5b1853a41da8" />
+
 </p>
 
 ---
@@ -147,7 +146,7 @@ Essa camada é responsável por:
 ### Chat com abertura de conta
 
 <p align="center">
-<img width="500" alt="Abertura de conta MDBank" src="https://github.com/user-attachments/assets/9ff7eba6-71a7-4fbd-bb28-f88a059fa3ae" />
+<img width="700" alt="Abertura de conta MDBank" src="https://github.com/user-attachments/assets/9ff7eba6-71a7-4fbd-bb28-f88a059fa3ae" />
 </p>
 
 
@@ -156,7 +155,7 @@ Essa camada é responsável por:
 ### Consulta e exibição de cartão de crédito
 
 <p align="center">
-<img width="500" alt="Cartão de crédito MDBank" src="https://github.com/user-attachments/assets/ee06b663-ee38-47cd-a035-dc0fdab09699" />
+<img width="700" alt="Cartão de crédito MDBank" src="https://github.com/user-attachments/assets/ee06b663-ee38-47cd-a035-dc0fdab09699" />
 </p>
 
 ---
@@ -164,7 +163,7 @@ Essa camada é responsável por:
 ### Histórico de respostas e estado compartilhado
 
 <p align="center">
-<img width="500" alt="Histórico MDBank" src="https://github.com/user-attachments/assets/9ddfd458-88dd-4ae5-a328-e40b3ccf0d46" />
+<img width="700" alt="Histórico MDBank" src="https://github.com/user-attachments/assets/9ddfd458-88dd-4ae5-a328-e40b3ccf0d46" />
 </p>
 
 ---
@@ -255,5 +254,5 @@ Durante o desenvolvimento deste projeto, foram praticados conceitos avançados d
 ---
 
 <p align="right">
-2026
+11/06/2026
 </p>
