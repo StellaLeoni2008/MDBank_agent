@@ -1,0 +1,46 @@
+{
+  "contas": {
+    "1248129381": {
+      "nome": "Stella Leoni",
+      "numero": 79875,
+      "saldo": 0.0
+    },
+    "19248312398": {
+      "nome": "Andr\u00e9 Silveira",
+      "numero": 58344,
+      "saldo": 0.0
+    },
+    "40414351029": {
+      "nome": "Roberta Manuzo",
+      "numero": 94145,
+      "saldo": 0.0
+    },
+    "22129351026": {
+      "nome": "Jonathan Duarte",
+      "numero": 99098,
+      "saldo": 0.0
+    }
+  },
+  "cartoes": {
+    "1248129381": {
+      "numero": 89209,
+      "tipo": "cr\u00e9dito",
+      "limite": 1618
+    },
+    "19248312398": {
+      "numero": 22203,
+      "tipo": "cr\u00e9dito",
+      "limite": 1086
+    },
+    "40414351029": {
+      "numero": 45541,
+      "tipo": "cr\u00e9dito",
+      "limite": 1952
+    },
+    "22129351026": {
+      "numero": 79096,
+      "tipo": "cr\u00e9dito",
+      "limite": 3488
+    }
+  }
+}

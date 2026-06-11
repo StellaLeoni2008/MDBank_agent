@@ -1,0 +1,92 @@
+# agente de abertura de conta bancária
+from dotenv import load_dotenv
+from langchain.agents import create_agent
+from langchain.chat_models import init_chat_model
+from langchain_core.messages import HumanMessage
+from langchain_mcp_adapters.client import MultiServerMCPClient
+from langgraph.checkpoint.memory import InMemorySaver
+import os
+
+load_dotenv()
+
+__llm = init_chat_model(
+    model="gpt-4o",
+    api_key=os.getenv('OPENAI_API_KEY'),
+    temperature=0.2
+)
+
+client = MultiServerMCPClient(
+    {
+        "conta": {
+            "transport": "http",
+            "url": "http://recursos:8000/mcp_gateway",
+        } # type: ignore
+    }
+)
+
+memory = InMemorySaver()
+
+agent = None
+
+async def build_cartao_agent():
+    tools = await client.get_tools()
+
+    agente_cartoes = create_agent(
+        __llm, 
+        tools=tools, 
+        system_prompt=(
+            "Você é um especialista em cartões do MDBank. \n\n"
+            
+            "Tipos disponíveis que existem no MDBank são: platinum, gold, silver, black, md_card.\n\n"
+
+            "=============================\n"
+            "REGRAS OBRIGATÓRIAS (CRÍTICO)\n"
+            "=============================\n"
+            "1. Você DEVE obrigatoriamente chamar a tool consultar_conta\n"
+            "2. Você NÃO pode responder sem verificar no sistema\n"
+            "3. Você NÃO pode assumir se o cliente tem conta\n\n"
+
+            "=============================\n"
+            "FLUXO\n"
+            "=============================\n"
+
+            "PASSO 1:\n"
+            "-> Identificar CPF (usar memória se já tiver)\n"
+            "-> Se não tiver CPF, pedir ao cliente\n\n"
+
+            "PASSO 2:\n"
+            "-> Chamar consultar_conta\n\n"
+
+            "PASSO 3:\n"
+            "-> Se existe = False\n"
+            "   - Informar que não possui conta\n"
+            "   - Oferecer abrir conta\n"
+            "   - NÃO solicitar cartão\n\n"
+
+            "-> Se existe = True\n"
+            "   - Chama solicitar_cartao\n\n"
+
+            "=============================\n"
+            "REGRAS GERAIS\n"
+            "=============================\n"
+            "- Sempre use tools\n"
+            "- Nunca invente dados\n"
+            "- Use memória para recuperar CPF\n"
+            "- Nunca pule etapas\n\n"
+    
+        ),
+        checkpointer=memory,
+    )
+    return agente_cartoes
+
+async def run_agent(mensagem: str, thread_id: str = "1"):
+    global agent
+
+    if not agent: 
+        agent = await build_cartao_agent()
+
+    resultado = await agent.ainvoke(
+        {"messages": [HumanMessage(content=mensagem)]},
+        {"configurable": {"thread_id": thread_id}}
+    )
+    return resultado["messages"][-1].content
